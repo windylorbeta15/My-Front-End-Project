@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ashgard Industries</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/log_remake_favicon.png">
+
+    <!-- Preconnects for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS scripts with defer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+<style>
+@view-transition {
+  navigation: auto;
+}
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(2deg, rgb(0 0 0) 24%, rgb(13 83 144) 71%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .thankyou-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1000px
+  }
+
+  h1 {
+    color: #0d5390;
+    margin-bottom: 15px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .thankyou-container{
+      max-width: 300px;
+    }
+    h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+  }
+  @media (min-width: 770px) and (max-width: 1024px) {
+    .thankyou-container{
+      max-width: 500px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="thankyou-container fade-in">
+  <h1>Thank You for Your Submission!</h1>
+  <p>
+    We’ve received your details successfully.  
+    Please check your email inbox for a confirmation message.  
+    If you don’t see it within a few minutes, be sure to check your <strong>Spam</strong> or <strong>Junk</strong> folder.
+  </p>
+  <a href="index.html">← Back to Home</a>
+</div>
+  <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            // Modal
+            const modal = document.getElementById("myModal");
+            const openBtns = [document.getElementById("openModalBtn"), document.getElementById("contactus")];
+            const closeBtn = document.getElementById("closeModal");
+
+            const openModal = () => modal && (modal.style.display = "block");
+            const closeModal = () => modal && (modal.style.display = "none");
+
+            openBtns.forEach(btn => btn?.addEventListener('click', openModal));
+            closeBtn?.addEventListener('click', closeModal);
+            window.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+            // Fade-in
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            const handleFadeIn = () => {
+                fadeInElements.forEach(el => {
+                    if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('show');
+                });
+            };
+            window.addEventListener('scroll', handleFadeIn);
+            handleFadeIn();
+        });
+    </script>
+</body>
+</html>

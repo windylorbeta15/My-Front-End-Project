@@ -1,0 +1,175 @@
+        body{
+            text-align: justify;
+            /* font-size: 18px;
+        } */
+         
+        #btn-home{
+            padding: 13rem 0 25rem 0;
+            background-image: linear-gradient(to right top, #16181c, #16181c, #16181ccc, #374a60b5, #435c7873), url(/logo-body.png); 
+            background-color: #25292f; background-size: cover; 
+            height: 300px; 
+            width: 100%;
+        }
+
+/* About Us */
+        div#btn-about-us {
+            padding: 320px 0 180px 0;
+            background-image: linear-gradient(to top, #172233, #16181b);
+        }
+        /* div#about div:nth-child(2) {
+            align-content: center;
+            text-align: end;
+        } */
+
+/* Services */
+        #services-section{
+            padding: 150px 0px; 
+            background-image: linear-gradient(to top, #16181b, #172233);
+        }
+
+/* Information */
+        #ashgard-info{
+           padding: 13rem 0 25rem 0;
+            background-image: linear-gradient(to right top, #16181c, #16181c, #16181c, #22405ca8, #435c7873), url(/info-banner.png); 
+            background-color: #25292f; background-size: cover; 
+            height: 300px; 
+            width: 100%;
+        }
+        section#testimonial{
+            background: linear-gradient(175deg, rgb(22 24 28) 0%, rgb(18 39 57) 50%, rgba(22, 83, 130, 1) 92%);
+        }
+       section#testimonial-background {
+    background: linear-gradient(2deg, rgba(22, 24, 28, 1) 0%, rgba(20, 43, 61, 1) 50%, rgba(22, 83, 130, 1) 92%);
+        text-align: center;
+}
+/* Section-2 */
+        div#section02 {
+            position: absolute;
+            top: 628px;
+            left: 0;
+            z-index: 1;
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px 80px 30px 300px;
+            background: #17202e;
+            box-shadow: 6px 15px 20px 0px #8dc0cb1f;
+            border-radius: 0 10px 10px 0;
+        }
+        div#btn-services h4 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+        #info-services{
+         background-image: linear-gradient(to right top, #16181c, #16181c, #060606b5, #3e313194, #000000), url(/bg-info.jpg); 
+        }
+/* Hover */
+        div#navMenu ul li:hover {
+        background: #3083bd;
+        border-radius: 10px;
+        }
+        div#btn-services>div>div:hover {
+            background: #007ed7;
+        /* -ms-transform: scale(1.5); /* IE 9 */
+        /* -webkit-transform: scale(1.5); Safari 3-8 */ 
+        transform: scale(1.1); 
+        }
+        div#btn-services>div>div {
+        margin-right: 10px;
+        padding: 60px 60px;
+        transition: transform 0.2s;
+        }
+
+/* Marquee */
+  marquee {
+           position: relative;
+            width: 100vw;
+            max-width: 100%;
+            height: 200px;
+            overflow-x: hidden;
+        }
+        #test {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Footer */
+        div#btn-contact-us{
+        padding: 50px;
+        background-color: #101113;   
+         }
+            /* .about-footer li i{
+            position: absolute;
+            left: 50%;
+            font-size: 20px;
+        } */
+        .about-footer i {
+            font-size: 25px;
+
+        }
+        .about-footer p {
+            border-left: 1px solid white;
+            padding-left: 15px;
+            margin-left: 22px;
+            margin-bottom: 0;
+            /* padding-right: 18px; */
+        }  
+         .dropdown:hover .dropdown-menu {
+         display: block;
+        margin-top: 0;
+        }
+    
+        @media only screen and (max-width: 600px) {
+           #btn-home{
+            background-image: linear-gradient(to right top, #16181c, #16181c, #16181ccc, #374a60b5, #435c7873), url(/log_remake.png); 
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-size: 45rem;
+            }
+            #about {
+                flex-direction: column-reverse;
+                padding: 0px 15px;
+            }
+            #section02{
+                position: unset!important;
+                padding: 20px 20px !important;
+            }
+
+            #ashgard-banner {
+                text-align: center;
+            }
+
+            #btn-services>div>div {
+                width: 300px;
+                font-weight: 300;
+            }
+
+            div#btn-about-us {
+                padding: 10px 0px;
+            }
+
+            div#btn-about-us h2 {
+                margin-top: 25px;
+                text-align: center;
+            }
+
+             .about-footer li i {
+                position: unset;
+                font-size: 20px;
+            }
+        
+            .about-footer li {
+                 text-align: center;
+                 border: none;
+                 padding: 10px 0px 10px 0px;
+            }
+            
+        }
+    }

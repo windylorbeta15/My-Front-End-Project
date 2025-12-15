@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cyber Security Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/log_remake_favicon.png">
+
+    <!-- Preconnects for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS scripts with defer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        h1 {
+            font-size: 70px;
+            line-height: 20px;
+            letter-spacing: 7px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        div#column-left,
+        #column-center {
+            flex-direction: column;
+            width: 50%;
+        }
+
+        div#column-right {
+            width: 50%;
+            margin: 0 30px;
+        }
+
+        #services-title {
+            margin: 35px 0 5px 0;
+        }
+
+        div#column-img-large:hover {
+            background-blend-mode: unset;
+        }
+
+        #services-section {
+            background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/about-img1.jpg);
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #sub-banner {
+            background: linear-gradient(rgb(0 42 86 / 84%), rgb(84 0 26 / 33%)), url(/images/cyber-banner.jpg);
+            background-position-y: center !important;
+            background-position: 286px -396px
+}
+        
+
+        div#column-img-left {
+            background: linear-gradient(2deg, rgb(0 0 0 / 19%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/cyber-img-left.jpg);
+            background-size: cover;
+            background-position: center center;
+            padding: 0 40px 20px 40px;
+            margin: 0 0 30px 30px;
+            border-radius: 10px;
+            height: 500px;
+            align-content: end;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 0 15px;
+            }
+
+            h1 {
+
+                font-size: 66px;
+                line-height: 70px;
+                letter-spacing: -2px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+            div#column-left,
+            div#column-right {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            div#column-img-large {
+                margin: 0 0 30px 0;
+            }
+
+            div#column-img-left,
+            div#column-right {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 0 0 0;
+                padding: 0;
+
+            }
+            .sticky-top {
+    padding-top: 30px;
+}
+        }
+
+        @media (min-width: 770px) and (max-width: 990px) {
+
+            div#column-left,
+            div#column-right {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 0 30px 0;
+                padding: 0;
+
+            }
+
+            div#column-img-large {
+                margin: 0 0 30px 0;
+            }
+            h1 {
+        font-size: 70px;
+        line-height: 0px;
+        letter-spacing: 0px;
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu Banner -->
+    <div id="navbar">
+        <div class="d-flex container justify-content-center align-items-center navbar-expand-lg" id="banner">
+            <a class="navbar-brand  fade-in" href="index.html">
+                <img src="/images/log_remake.png" width="90" class="rounded-circle" />
+            </a>
+
+            <div class="navbar fade-in">
+                <nav class="container navbar navbar-expand-lg" id="center-nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#ashgard-home" class="btn fs-5 nav-btn">Home</a>
+                            </li>
+                            <li class="nav-item active text-nowrap">
+                                <a href="#btn-about-us" class="btn fs-5 nav-btn">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a href="#" class="nav-link dropdown-toggle btn fs-5 nav-btn" id="navtext"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="info.html">Information Tracing</a></li>
+                                    <li><a class="dropdown-item" href="cyber.html">Cyber Security Services</a></li>
+                                    <li><a class="dropdown-item " href="evidence.html">Evidence Collection</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item active text-nowrap">
+                                 <a class="btn fs-5 nav-btn d-lg-none d-sm-block" id="contactus" href="#form-section">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="nav-item text-end text-nowrap fade-in">
+                <a type="button" class="fs-5 nav-btn d-none d-lg-block openModalBtn" id="contactus" href="#form-section">Contact
+                    Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- Home Banner -->
+    <section class="d-flex justify-content-center text-center" id="sub-banner">
+        <div class="container text-light">
+            <div id="ashgard-banner">
+                <h1>Cyber Security Services</h1>
+            </div>
+        </div>
+    </section>
+    <!-- About Us  -->
+    <section class="py-5" id="btn-about-us">
+        <div class="container py-5">
+            <div class="container py-5 px-0 fade-in">
+                <span class="mt-2" id="widget-container">Service</span>
+            </div>
+            <div class="text-white fade-in">
+                <h2 class="w-100">
+                    We Are More Than Digital Agency
+                </h2>
+                <hr class="border-secondary my-4">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="btn-about-us">
+        <div class=" container py-5">
+            <div class="d-lg-flex d-md-block d-sm-block  text-white">
+                <div class=" align-middle d-flex fade-in" id="column-left">
+                    <div id="column-img-left">
+                        <!-- <h4>
+                            Our Mission
+                        </h4> -->
+                        <!-- <hr class="border-secondary my-4">
+                        <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed eiusmod tempor.</p> -->
+                    </div>
+                </div>
+                <div class="text-white mb-5 fade-in" id="column-right">
+                    <div class="sticky-top">
+                        <h3 class="mb-4 text-uppercase">
+                            Lorem Ipsum
+                        </h3>
+                        <hr class="border-secondary">
+                        <p class="text-light">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="btn-about-us">
+        <div class="container py-5">
+            <div class="container py-5 px-0 fade-in">
+                <span class="mt-2" id="widget-container">The Problem</span>
+            </div>
+            <div class="text-white fade-in">
+                <h2 class="w-100">
+                    Company A.....
+                </h2>
+                <hr class="border-secondary my-4">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us  -->
+    <section class="py-5" id="form-section">
+        <div class="container d-flex gap-5 py-5" id="form-column">
+            <div class="fade-in" id="form">
+                <h3>Enter Your Details</h3>
+                <!-- FORM that redirects -->
+                <form action="thankyou.html" method="get">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" placeholder="Enter full name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="text-center pt-lg-5 pt-md-0 fade-in" id="form-content">
+                <h2>
+                    Let's Create Something Great Together
+                </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer pt-5">
+        <div class="footer-container pt-5">
+
+            <!-- Left Column: Logo + Name -->
+            <div class="footer-left fade-in">
+                <img src="images/log_remake.png" alt="Company Logo" class="footer-logo">
+                <h4 class="company-name">Ashgard Industries</h4>
+            </div>
+
+            <!-- Right Column: Contact Information -->
+            <div class="footer-right fade-in">
+
+                <div class="contact-item">
+                    <i class="fa fa-map-marker contact-icon"></i>
+                    <p>
+                        <a href="https://maps.app.goo.gl/SKYCqD2TDKZp1cbs8 " target="_blank"><strong>Main
+                                Office:</strong> C. Congson St., Cambiohan, Casili, Consolacion, Cebu,
+                            Philippines<br></a>
+                        <a href="https://maps.app.goo.gl/zvgovn3RtN4HGUXk6" target="_blank">Manila Office:</strong> S-3
+                            2F, Antel SPA and Serenity Suites, Gen. Luna St.,
+                            corner Makati Ave., and Salamanca St., Makati City</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa fa-phone contact-icon"></i>
+                    <p>
+                        <a href="tel:+63325208534"> <strong>Cebu Office:</strong> +63-32-520-8534<br></a>
+                        <a href="tel:+63283329974"> <strong>Makati Office:</strong> +63-2-833-29974</a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa fa-envelope contact-icon"></i>
+                    <a href="mailto:admin@ashgard.com.ph">
+                        <p>admin@ashgard.com.ph</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-secondary">
+
+        <div class="text-center small text-secondary">
+            © 2025 Ashgard Corporation. All rights reserved.
+        </div>
+        </section>
+        <script>
+            const navbar = document.getElementById('navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Navbar scroll
+                const navbar = document.getElementById('navbar');
+                window.addEventListener('scroll', () => {
+                    if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 50);
+                });
+                // Fade-in
+                const fadeInElements = document.querySelectorAll('.fade-in');
+                const handleFadeIn = () => {
+                    fadeInElements.forEach(el => {
+                        if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('show');
+                    });
+                };
+                window.addEventListener('scroll', handleFadeIn);
+                handleFadeIn();
+            });
+
+        </script>
+</body>
+
+</html>

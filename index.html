@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ashgard Industries</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/log_remake_favicon.png">
+
+    <!-- Preconnects for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS scripts with defer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Menu Banner -->
+        <div id="navbar">
+        <div class="d-flex container justify-content-center align-items-center navbar-expand-lg" id="banner">
+            <a class="navbar-brand  fade-in" href="index.html">
+                <img src="/images/log_remake.png" width="90" class="rounded-circle" />
+            </a>
+
+            <div class="navbar fade-in">
+                <nav class="container navbar navbar-expand-lg" id="center-nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#ashgard-home" class="btn fs-5 nav-btn">Home</a>
+                            </li>
+                            <li class="nav-item active text-nowrap">
+                                <a href="#btn-about-us" class="btn fs-5 nav-btn">About Us</a>   
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a href="#" class="nav-link dropdown-toggle btn fs-5 nav-btn"
+                                    id="navtext" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="info.html">Information Tracing</a></li>
+                                    <li><a class="dropdown-item" href="cyber.html">Cyber Security Services</a></li>
+                                    <li><a class="dropdown-item " href="evidence.html">Evidence Collection</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item active text-nowrap">
+                                         <a class="btn fs-5 nav-btn d-lg-none d-sm-block" id="contactus" href="#form-section">Contact Us</a>  
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="nav-item text-end text-nowrap fade-in">
+                <a type="button" class="fs-5 nav-btn d-none d-lg-block openModalBtn" id="contactus" href="#form-section">Contact
+                    Us</a>
+            </div>
+        </div>
+    </div>
+<section id="bg-banner">
+    <!-- Home Banner -->
+    <section class="d-flex justify-content-center text-center" id="ashgard-home">
+        <div class="container text-light">
+            <div class="fade-in" id="ashgard-banner">
+                <h1>ASHGARD INDUSTRIES</h1>
+                <h4 class="py-2 fw-normal">Guarding Data, Powering Progress</h4>
+                <a type="button" class="open-btn btn-info my-2" href="#form-section">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+</section>
+    <!-- About Us  -->
+    <section class="py-5" id="btn-about-us">
+        <div class="container py-5">
+            <div class="container py-5 px-0 fade-in">
+                <span class="mt-2" id="widget-container">About Us</span>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-12 m-lg-1 m-md-auto m-sm-auto text-white fade-in">
+                <h2 class="w-100">
+                    We Are More Than Digital Agency
+                </h2>
+            </div>
+        </div>
+
+        <div class="py-5">
+            <div class="d-lg-flex d-md-block d-sm-block  text-white">
+                <div class=" align-middle d-flex fade-in" id="column-left">
+                    <div class="first-img" id="column-img-large">
+                        <h4>
+                            Our Mission
+                        </h4>
+                        <hr class="border-secondary my-4">
+                        <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed eiusmod tempor.</p>
+                    </div>
+                    <div class="second-img" id="column-img-small">
+                        <h4>
+                            Equipment
+                        </h4>
+                        <hr class="border-secondary my-4">
+                        <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="align-middle d-flex fade-in" id="column-center">
+                    <div class="third-img" id="column-img-small">
+                        <h4>
+                            Core Values
+                        </h4>
+                        <hr class="border-secondary my-4">
+                        <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed eiusmod tempor.</p>
+                    </div>
+                    <div class="fourth-img" id="column-img-large">
+                        <h4>
+
+                            Our Vision
+                        </h4>
+                        <hr class="border-secondary my-4">
+
+                        <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="text-white mb-5 fade-in" id="column-right">
+                    <div class="sticky-top">
+                        <h3 class="mb-4 text-uppercase">
+                            About Us
+                        </h3>
+                        <hr class="border-secondary">
+                        <p class="text-light">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit eveniet dolore,
+                            distinctio inventore minima ea illum iure cum eum nemo, alias harum dicta! Eum quisquam
+                            doloribus quibusdam distinctio aliquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit eveniet dolore,
+                            distinctio inventore minima ea illum iure cum eum nemo, alias harum dicta! Eum quisquam
+                            doloribus quibusdam distinctio aliquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit eveniet dolore,
+                            distinctio inventore minima ea illum iure cum eum nemo, alias harum dicta! Eum quisquam
+                            doloribus quibusdam distinctio aliquam?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services  -->
+    <section class="text-center" id="services-section">
+        <span class="mt-2 mb-5 fade-in" id="widget-container">Services</span>
+        <div class="container">
+            <h2 class=" fade-in" id="services-title">Explore Our Best Services</h2>
+
+            <div class="fade-in" id="services-row">
+
+                <div>
+                    <i class="fa fa-user-secret"></i>
+                    <h4>Information Tracing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="info.html" class="text-uppercase text-decoration-none fs-6">View Details →</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-shield"></i>
+                    <h4>Cyber Security Services</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="cyber.html" class="text-uppercase text-decoration-none fs-6">View Details →</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-address-book-o"></i>
+                    <h4>Evidence Collection</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="evidence.html" class="text-uppercase text-decoration-none fs-6">View Details →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- Contact Us  -->
+    <section id="form-section">
+        <div class="container d-flex gap-5 py-5" id="form-column">
+            <div class="fade-in" id="form">
+                 <h3>Enter Your Details</h3>
+                 <!-- FORM that redirects -->
+                 <form action="thankyou.html" method="get">
+                <label>Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter full name" required>
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter email address" required>
+
+                <button type="submit">Submit</button>
+                </form>
+            </div> 
+        <div class="text-center pt-5 fade-in" id="form-content" >
+        <h2>
+            Let's Create Something Great Together
+        </h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+        </div>
+ </div>
+</section>
+
+    <footer class="footer pt-5">
+        <div class="footer-container pt-5">
+
+            <!-- Left Column: Logo + Name -->
+            <div class="footer-left fade-in">
+                <img src="images/log_remake.png" alt="Company Logo" class="footer-logo">
+                <h4 class="company-name">Ashgard Industries</h4>
+            </div>
+
+            <!-- Right Column: Contact Information -->
+            <div class="footer-right fade-in">
+
+                <div class="contact-item">
+                    <i class="fa fa-map-marker contact-icon"></i>
+                    <p>
+                        <a href="https://maps.app.goo.gl/SKYCqD2TDKZp1cbs8 " target="_blank"><strong>Main Office:</strong> C. Congson St., Cambiohan, Casili, Consolacion, Cebu,
+                        Philippines<br></a>
+                       <a href="https://maps.app.goo.gl/zvgovn3RtN4HGUXk6" target="_blank">Manila Office:</strong> S-3 2F, Antel SPA and Serenity Suites, Gen. Luna St.,
+                        corner Makati Ave., and Salamanca St., Makati City</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa fa-phone contact-icon"></i>
+                    <p>
+                       <a href="tel:+63325208534"> <strong>Cebu Office:</strong> +63-32-520-8534<br></a>
+                       <a href="tel:+63283329974"> <strong>Makati Office:</strong> +63-2-833-29974</a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa fa-envelope contact-icon"></i>
+                   <a href="mailto:admin@ashgard.com.ph"> <p>admin@ashgard.com.ph</p></a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-secondary">
+
+        <div class="text-center small text-secondary">
+            © 2025 Ashgard Corporation. All rights reserved.
+        </div>
+        </section>
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            // Fade-in
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            const handleFadeIn = () => {
+                fadeInElements.forEach(el => {
+                    if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('show');
+                });
+            };
+            window.addEventListener('scroll', handleFadeIn);
+            handleFadeIn();
+        });
+    </script>
+</body>
+
+</html>
