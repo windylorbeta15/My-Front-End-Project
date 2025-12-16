@@ -345,7 +345,7 @@ div#column-left,
 }
 
 .first-img {
-  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/mission.png);
+  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/mission.png);
   background-size: 1300px;
   padding: 0 40px 20px 40px;
   margin: 0 0 30px 30px;
@@ -357,7 +357,7 @@ div#column-left,
 }
 
 .second-img {
-  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/equip.jpg);
+  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/equip.jpg);
   background-size: 650px;
     padding: 0 40px 20px 40px;
     margin: 0 0 30px 30px;
@@ -369,7 +369,7 @@ div#column-left,
 }
 
 .third-img {
-  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/core.png);
+  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/core.png);
   background-size: 650px;
     padding: 0 40px 20px 40px;
     margin: 0 0 30px 30px;
@@ -381,7 +381,7 @@ div#column-left,
 }
 
 .fourth-img {
-  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/vision.jpg);
+  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/vision.jpg);
   background-size: 900px;
   padding: 0 40px 20px 40px;
   margin: 0 0 30px 30px;
@@ -783,7 +783,7 @@ div#form {
   }
 
   section#bg-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-banner.gif) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-banner.gif) no-repeat center;
 
   }
 
