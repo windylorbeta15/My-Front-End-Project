@@ -265,7 +265,7 @@ button[type="submit"]:hover {
 section#bg-banner {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/bg-banner.gif) no-repeat center;
+    url('images/bg-banner.gif') no-repeat center;
   transition: padding 0.3s ease, background-position 0.3s ease;
   background-position: 0px -90px;
   background-size: 1900px;
@@ -310,10 +310,9 @@ a.open-btn.btn-info.my-2:hover {
   box-shadow: 0px 0px 7PX 1px #a4a2a2;
 }
 
-#services-section {
-  padding: 150px 0px;
-  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(images/services-bg.jpg);
-}
+ /* section#bg-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg-banner.gif') no-repeat center;
+  } */
 
 /* Sub Pages */
 #sub-banner {
