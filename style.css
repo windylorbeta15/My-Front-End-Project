@@ -310,9 +310,10 @@ a.open-btn.btn-info.my-2:hover {
   box-shadow: 0px 0px 7PX 1px #a4a2a2;
 }
 
- /* section#bg-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg-banner.gif') no-repeat center;
-  } */
+#services-section {
+  padding: 150px 0px;
+  background: linear-gradient(2deg, rgb(0 0 0 / 69%) 24%, rgba(20, 43, 61, 0.31) 71%), url(/images/services-bg.jpg);
+}
 
 /* Sub Pages */
 #sub-banner {
@@ -781,10 +782,9 @@ div#form {
     background-size: cover;
   }
 
-  section#bg-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-banner.gif) no-repeat center;
-
-  }
+  /* section#bg-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg-banner.gif') no-repeat center;
+  } */
 
   #services-section {
     padding: 150px 20px;
