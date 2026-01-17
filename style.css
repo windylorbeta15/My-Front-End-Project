@@ -259,17 +259,23 @@ button[type="submit"]:hover {
 /* Banner */
 #ashgard-home {
     padding: 300px 0;
-    background: linear-gradient(rgb(4 95 193 / 69%), rgb(0 0 0 / 73%));
+    background-image:
+        linear-gradient(rgb(4 95 193 / 69%), rgb(0 0 0 / 73%)),
+        url("images/bg-banner.gif") !important;
+        
+    background-repeat: no-repeat;
+    background-size: 1900px auto;
+    transition: padding 0.3s ease, background-position 0.3s ease;
 }
 
-section#bg-banner {
+/* section#bg-banner {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/bg-banner.gif) no-repeat center;
+    url('./images/bg-banner.gif') no-repeat center;
   transition: padding 0.3s ease, background-position 0.3s ease;
   background-position: 0px -90px;
   background-size: 1900px;
-}
+} */
 
 #widget-container {
   padding: 10px 15px;
@@ -782,10 +788,9 @@ div#form {
     background-size: cover;
   }
 
-  section#bg-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-banner.gif) no-repeat center;
-
-  }
+  /* section#bg-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg-banner.gif') no-repeat center;
+  } */
 
   #services-section {
     padding: 150px 20px;
