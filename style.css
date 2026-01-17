@@ -265,7 +265,7 @@ button[type="submit"]:hover {
 section#bg-banner {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/bg-banner.gif') no-repeat center;
+    url('../images/bg-banner.gif') no-repeat center !important;
   transition: padding 0.3s ease, background-position 0.3s ease;
   background-position: 0px -90px;
   background-size: 1900px;
