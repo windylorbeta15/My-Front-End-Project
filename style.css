@@ -267,6 +267,7 @@ button[type="submit"]:hover {
     background-size: 1900px auto;
     transition: padding 0.3s ease, background-position 0.3s ease;
 }
+<<<<<<< HEAD
 
 /* section#bg-banner {
   background:
@@ -276,6 +277,8 @@ button[type="submit"]:hover {
   background-position: 0px -90px;
   background-size: 1900px;
 } */
+=======
+>>>>>>> 75407ac639329a6ad4ba7d968700439becaa0114
 
 #widget-container {
   padding: 10px 15px;
